@@ -1,11 +1,13 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import styled from 'styled-components';
 import {
   HomeLayout,
   ErrorPage,
   Login,
   Register,
   About,
+  Landing,
 
 
 
@@ -13,7 +15,7 @@ import {
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <HomeLayout/>,
+    element: <Landing/>,
   },
   {
     path: '/about',
